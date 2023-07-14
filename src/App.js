@@ -1,11 +1,14 @@
 import "./App.css";
 import ColorBox from "./components/ColorBox";
+import { ColorProvider } from "./contexts/color";
 
 const App = () => {
   return (
-    <div>
-      <ColorBox />
-    </div>
+    <ColorProvider>
+      <div>
+        <ColorBox />
+      </div>
+    </ColorProvider>
   );
 };
 
